@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZSELECT_OPTIONS_MP</NAME>
+    <SUBC>M</SUBC>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <DYNPROS>
+    <item>
+     <HEADER>
+      <PROGRAM>ZSELECT_OPTIONS_MP</PROGRAM>
+      <SCREEN>0100</SCREEN>
+      <LANGUAGE>E</LANGUAGE>
+      <DESCRIPT>Main Screen</DESCRIPT>
+      <TYPE>N</TYPE>
+      <NEXTSCREEN>0100</NEXTSCREEN>
+      <LINES>027</LINES>
+      <COLUMNS>121</COLUMNS>
+     </HEADER>
+     <CONTAINERS>
+      <RPY_DYCATT>
+       <TYPE>SCREEN</TYPE>
+       <NAME>SCREEN</NAME>
+      </RPY_DYCATT>
+      <RPY_DYCATT>
+       <TYPE>SUBSCREEN</TYPE>
+       <NAME>SUB</NAME>
+       <ELEMENT_OF>SCREEN</ELEMENT_OF>
+       <LINE>003</LINE>
+       <COLUMN>004</COLUMN>
+       <LENGTH>111</LENGTH>
+       <HEIGHT>022</HEIGHT>
+      </RPY_DYCATT>
+     </CONTAINERS>
+     <FIELDS>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>OKCODE</TYPE>
+       <TEXT>____________________</TEXT>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <INPUT_FLD>X</INPUT_FLD>
+      </RPY_DYFATC>
+     </FIELDS>
+    </item>
+   </DYNPROS>
+   <TPOOL>
+    <item>
+     <ID>R</ID>
+     <ENTRY>select options module pool</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ONO</KEY>
+     <ENTRY>ORDER NUMBER</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>
